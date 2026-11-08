@@ -1,17 +1,10 @@
 [package]
-name = "sigmaos-bin"
+name = "sigmaos_bin"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "System binaries and tools"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-bin"
-readme = "README.md"
-keywords = ["bin", "binary", "tools"]
-categories = ["os"]
+license = "MIT"
+description = "SigmaOS bin component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_bin"
+path = "src/lib.rs"
