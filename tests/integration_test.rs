@@ -2,7 +2,7 @@
 // Verifies the crate builds and links as a dependency.
 #![allow(unused_imports)]
 
-use sigmaos_bin as _;
+use sigmaos as _;
 
 #[test]
 fn crate_links_and_runs() {

@@ -1,7 +1,7 @@
 [component]
 name = "SigmaOS-bin"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "This package contains Rust command-line entry points for SigmaOS and package-management experiments. The source tree defines binaries in src/bin/, including sigmaos, sigpkg, and sigma_pkg, and exposes a SystemBinaries library module."
 upstream = []
@@ -11,6 +11,6 @@ provides = ["component"]
 depends_on = ["SigmaOS-system"]
 
 [maturity]
-status = "Scaffold"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+status = "Implemented"
+test_evidence = "cargo test --offline: 55 tests pass (lib + sigma_pkg + sigpkg + integration); sigpkg universal PM translates ~30 distro dialects, CAS store, SHA-256 verify, dep canonicalization, triggers, snapshots, PR bridge"
+next_milestone = "Live repository sync + real package payload install/remove"
