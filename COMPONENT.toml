@@ -3,12 +3,12 @@ name = "SigmaOS-bin"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "bin component"
+description = "This package contains Rust command-line entry points for SigmaOS and package-management experiments. The source tree defines binaries in src/bin/, including sigmaos, sigpkg, and sigma_pkg, and exposes a SystemBinaries library module."
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
